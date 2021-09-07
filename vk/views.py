@@ -7,6 +7,7 @@ from django.views import View
 from vk.models import Post
 
 TG_TOKEN = ''
+VK_ANSWER = ''
 NEW_POST = 'wall_post_new'
 TELEGRAM_URL = f'https://api.telegram.org/bot{TG_TOKEN}/'
 CHAT_ID = ''
