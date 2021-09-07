@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-0%5vl7cm&qkcqd1q(v=nys%ho_lm$(' \
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0570-176-59-112-128.ngrok.io',
-                 'localhost', ]
+ALLOWED_HOSTS = ['*', ]
 
 # Application definition
 
@@ -76,8 +75,12 @@ WSGI_APPLICATION = 'Igent_testcase.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
     }
 }
 
